@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Junyi Li." />
+  <title>Projects | Junyi Li</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Junyi Li home">JL</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Open navigation</span>☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a href="publications.html">Publications</a><a class="active" href="projects.html">Projects</a><a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero project-page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Projects</p>
+        <h1 class="page-title">Selected Projects</h1>
+        <p class="page-intro">From machine learning and digital twins to climate policy and architectural design, 
+          these projects demonstrate how data, engineering, and design can address complex urban challenges.</p>
+      </div>
+    </section>
+    <section class="section page-content">
+      <div class="container">
+        <div class="tabs" role="tablist" aria-label="Project categories">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" data-filter="all">All projects</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-filter="data-model">Data &amp; model</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-filter="policy-report">Urban policy</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-filter="architecture-design">Architecture design</button>
+        </div>
+
+        <div class="project-card-grid filter-list">
+
+          <article class="project-card filter-item" data-category="policy-report">
+              <div class="project-card-top">
+                  <p class="project-category">Engineering Case Study</p>
+                  <span>2026</span>
+              </div>
+              <h2>Typhoon-Induced Turbine Failure at Wenchang Wind Power Plant</h2>
+              <p>
+                  Developed a comprehensive engineering case study investigating wind turbine failures
+                  during Typhoon Yagi (2024) at the Wenchang Wind Farm. The report examines project
+                  development, turbine design, failure mechanisms, stakeholder responsibilities, and
+                  engineering ethics while proposing lessons for resilient wind energy infrastructure.
+              </p>
+              <div class="project-meta">
+                  <span>Wind Energy</span>
+                  <span>Failure Analysis</span>
+                  <span>Engineering Ethics</span>
+                  <span>Technical Report</span>
+              </div>
+              <div class="project-actions">
+                  <a href="assets/reports/UIM_final.pdf" target="_blank">Full Report</a>
+              </div>
+          </article>         
+
+          <article class="project-card filter-item" data-category="data-model">
+              <div class="project-card-top">
+                  <p class="project-category">Data &amp; Model</p>
+                  <span>2025</span>
+              </div>
+              <h2>GPU-Accelerated Urban Flood Simulation Framework</h2>
+              <p>
+                  Developed a high-resolution urban pluvial flood simulation framework that integrates
+                  spatial rainfall interpolation, hydrological runoff modeling, sewer capacity constraints,
+                  and GPU-accelerated weighted cellular automata. The platform enables rapid flood
+                  forecasting and scenario analysis for green infrastructure planning and urban resilience.
+              </p>
+              <div class="project-meta">
+                  <span>GPU Computing</span>
+                  <span>Hydrological Modeling</span>
+                  <span>Flood Simulation</span>
+                  <span>Urban Resilience</span>
+              </div>
+              <div class="project-actions">
+                <a href="assets/reports/Flood_slide.pdf" target="_blank">Presentation</a>
+                  <a href="assets/reports/Flood_report.pdf" target="_blank">Full Report</a>
+              </div>
+          </article>
+
+          <article class="project-card filter-item" data-category="data-model">
+            <div class="project-card-top">
+                <p class="project-category">Data &amp; Model</p>
+                <span>2024</span>
+            </div>
+            <h2>Identifying Burglary Risks with Google Street View Images</h2>
+            <p>
+                Developed machine learning models to predict burglary risk in New York City by
+                integrating Google Street View imagery, historical crime records, and demographic
+                data. The study compares convolutional neural networks and decision trees to identify
+                environmental features associated with burglary and support data-driven urban safety
+                planning.
+            </p>
+            <div class="project-meta">
+                <span>Computer Vision</span>
+                <span>Machine Learning</span>
+                <span>Urban Analytics</span>
+                <span>Crime Prediction</span>
+            </div>
+            <div class="project-actions">
+                <a href="https://github.com/ljyyyy120/Identifying-Burglary-Risks-with-Google-Street-View-Images" target="_blank">
+                  Github</a>
+                <a href="assets/reports/Crime_poster.pdf" target="_blank">Poster</a>
+                <a href="assets/reports/Crime_report.pdf" target="_blank">Full Report</a>
+            </div>
+          </article>
+
+          <article class="project-card filter-item" data-category="policy-report">
+            <div class="project-card-top">
+                <p class="project-category">Policy Evaluation</p>
+                <span>2024</span>
+            </div>
+            <h2>Evaluation of the Regional Greenhouse Gas Initiative (RGGI)</h2>
+            <p>Evaluated the effectiveness of the Regional Greenhouse Gas Initiative (RGGI) 
+              using emissions, economic, and demographic data to assess its impacts on carbon 
+              reduction, electricity prices, economic performance, and environmental justice.
+            </p>
+            <div class="project-meta">
+                <span>Policy Evaluation</span>
+                <span>Environmental Economics</span>
+                <span>Data Analysis</span>
+                <span>Climate Policy</span>
+            </div>
+            <div class="project-actions">
+                <a href="https://github.com/ljyyyy120/Evaluation-of-the-RGGI" target="_blank">GitHub</a>
+                <a href="assets/reports/RGGI_slide.pdf" target="_blank">Presentation</a>
+                <a href="assets/reports/RGGI_report .pdf" target="_blank">Full Report</a>
+            </div>
+          </article>
+
+          <article class="project-card filter-item" data-category="policy-report">
+            <div class="project-card-top"><p class="project-category">Policy Memo</p><span>2023</span></div>
+            <h2>NYC Breathe: A Community-Driven Allergy Management Platform</h2>
+            <p>Designed an integrated public health proposal for New York City that
+              combines mobile health, pollen monitoring, GIS-based navigation, and
+              cross-agency collaboration to improve allergy management and promote
+              healthier urban environments.</p>
+            <div class="project-meta">
+              <span>Public Health</span>
+              <span>Service Design</span>
+              <span>Policy Memo</span></div>
+            <div class="project-actions">
+                <a href="assets/reports/NYC-Breathe.pdf" target="_blank">Presentation</a>
+                <a href="https://online.fliphtml5.com/ddclb/loyt/#p=16" target="_blank">Full Policy Memo</a>
+            </div>
+          </article>
+
+          <article class="project-card filter-item" data-category="architecture-design">
+              <div class="project-card-top">
+                  <p class="project-category">Urban Design</p>
+                  <span>2022</span>
+              </div>
+
+              <h2>Youth Community</h2>
+
+              <p>
+                  Planned a high-density mixed-use community adjacent to Tongji
+                  University that combines residential, commercial, office, and public
+                  green spaces. The project emphasizes walkability, shared amenities,
+                  and flexible housing for young professionals.
+              </p>
+
+              <div class="project-meta">
+                  <span>Residential Design</span>
+                  <span>Master Planning</span>
+                  <span>Mixed-use Development</span>
+                  <span>Urban Housing</span>
+              </div>
+
+              <div class="project-actions">
+                  <a href="assets/design/Youth.pdf" target="_blank" rel="noopener noreferrer">
+                      View Project ↗
+                  </a>
+              </div>
+          </article>
+
+
+          <article class="project-card filter-item" data-category="architecture-design">
+              <div class="project-card-top">
+                  <p class="project-category">Architecture &amp; Urban Design</p>
+                  <span>2021</span>
+              </div>
+
+              <h2>Community Commercial Complex</h2>
+
+              <p>
+                  Developed a transit-oriented mixed-use commercial complex that
+                  integrates retail, community services, and public open space. The
+                  design promotes intergenerational interaction while creating vibrant
+                  pedestrian environments through connected plazas and layered circulation.
+              </p>
+
+              <div class="project-meta">
+                  <span>Mixed-use Design</span>
+                  <span>TOD</span>
+                  <span>Community Planning</span>
+                  <span>Commercial Architecture</span>
+              </div>
+
+              <div class="project-actions">
+                  <a href="assets/design/Complex.pdf" target="_blank" rel="noopener noreferrer">
+                      View Project ↗
+                  </a>
+              </div>
+          </article>
+
+
+          <article class="project-card filter-item" data-category="architecture-design">
+              <div class="project-card-top">
+                  <p class="project-category">Architecture Design</p>
+                  <span>2021</span>
+              </div>
+
+              <h2>Dongqian Lake Cultural Hall</h2>
+
+              <p>
+                  Designed a cultural complex integrating an exhibition hall and theater
+                  into the natural hillside landscape of Dongqian Lake. The project
+                  creates public gathering spaces while blending architecture with the
+                  surrounding terrain through layered forms and contrasting architectural
+                  expressions.
+              </p>
+
+              <div class="project-meta">
+                  <span>Cultural Architecture</span>
+                  <span>Landscape Integration</span>
+                  <span>Public Space</span>
+                  <span>Architectural Design</span>
+              </div>
+
+              <div class="project-actions">
+                  <a href="assets/design/Dongqianhu.pdf" target="_blank" rel="noopener noreferrer">
+                      View Project ↗
+                  </a>
+              </div>
+          </article>
+        </div>
+
+
+        <p class="empty-message" hidden>No projects are available in this category yet.</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-content"><p>© <span id="year"></span> Junyi Li</p><p><a href="index.html">Back to home</a></p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

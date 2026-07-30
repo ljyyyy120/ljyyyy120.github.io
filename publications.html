@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research publications by Junyi Li." />
+  <title>Publications | Junyi Li</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Junyi Li home">JL</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Open navigation</span>☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a><a class="active" href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Research</p>
+        <h1 class="page-title">Publications</h1>
+        <p class="page-intro">Peer-reviewed journal articles and conference proceedings on urban systems, structural health monitoring, and AI-driven decision-making.</p>
+      </div>
+    </section>
+    <section class="section page-content">
+      <div class="container">
+        <div class="tabs" role="tablist" aria-label="Research categories">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" data-filter="all">All research</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-filter="journal">Journal articles</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-filter="conference">Conference proceedings</button>
+        </div>
+
+        <div class="publication-list filter-list">
+
+          <article class="publication-item filter-item" data-category="journal">
+            <div class="publication-year">2026</div>
+            <div class="publication-body">
+              <p class="publication-type">Journal article</p>
+              <h2>The mechanisms beneath the urban buffer against depression</h2>
+              <p class="publication-authors"><strong>Junyi Li</strong>, Tian Gan, Shenghan Lyu, Hongying Wu, Simone Macrì, Maurizio Porfiri</p>
+              <p><em>Cities</em>, 176, 107215 (2026). 
+                A causal analysis of depression across 826 U.S. cities, revealing how urban
+                scaling, walkability, and socioeconomic factors jointly influence mental health.</p>
+              <div class="publication-links">
+              <a href="assets/papers/Cities2026.pdf" target="_blank">PDF</a>
+              <a href="https://doi.org/10.1016/j.cities.2026.107215"target="_blank">DOI</a>
+          </div>
+            </div>
+          </article>
+
+          <article class="publication-item filter-item" data-category="conference">
+              <div class="publication-year">2026</div>
+              <div class="publication-body">
+                  <p class="publication-type">Conference Proceedings</p>
+                  <h2>NOI-POMDP: A Noise-Explicit POMDP Framework for Structural Health Monitoring</h2>
+                  <p class="publication-authors"><strong>Junyi Li</strong>, Eleonora Maria Tronci</p>
+                  <p class="publication-journal">
+                      <em>Proceedings of the 12th European Workshop on Structural Health Monitoring (EWSHM 2026)</em><br>
+                      Toulouse, France • July 7–10, 2026.
+                      We propose NOI-POMDP, a noise-aware Partially Observable Markov Decision
+                      Process framework that explicitly models time-varying sensor noise for
+                      Structural Health Monitoring. By integrating the noise-generating process
+                      into belief updates, the framework improves state estimation, policy
+                      robustness, and long-term maintenance decisions under uncertain sensing
+                      conditions.</p>
+                  <div class="publication-links">
+                      <a href="assets/papers/EWSHM2026.pdf" target="_blank">PDF</a>
+                      <a href="https://doi.org/10.58286/33777" target="_blank">DOI</a>
+                  </div>
+              </div>
+          </article>
+
+        </div>
+        <p class="empty-message" hidden>No items are available in this category yet.</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-content"><p>© <span id="year"></span> Junyi Li</p><p><a href="index.html">Back to home</a></p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
