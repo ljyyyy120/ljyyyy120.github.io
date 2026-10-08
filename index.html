@@ -3,111 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Junyi Li — PhD Candidate and researcher." />
-  <title>Junyi Li | PhD Candidate</title>
+
+  <meta
+    name="description"
+    content="Junyi Li — PhD Candidate at New York University researching decision-making, complex systems, and emergence."
+  />
+
+  <title>Junyi Li | Research</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- =========================
+       Navigation
+  ========================== -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="index.html" aria-label="Junyi Li home">JL</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Open navigation</span>☰</button>
+
+      <a class="logo" href="index.html" aria-label="Junyi Li home">
+        JL
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="sr-only">Open navigation</span>
+        ☰
+      </button>
+
       <div class="nav-links" id="nav-links">
         <a class="active" href="index.html">Home</a>
         <a href="publications.html">Publications</a>
         <a href="projects.html">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
+
+    <!-- =========================
+         Hero
+    ========================== -->
     <section class="hero" id="home">
-      <div class="hero-shape hero-shape-one"></div>
-      <div class="hero-shape hero-shape-two"></div>
+
+      <img
+        src="assets/signature-line.png"
+        class="hero-signature"
+        alt=""
+        aria-hidden="true"
+      />
+
       <div class="container hero-grid">
+
+        <!-- Hero text -->
         <div class="hero-copy">
+
           <p class="eyebrow">Hello, I’m</p>
+
           <h1>Junyi Li</h1>
-          <p class="hero-title">PhD Candidate</p>
-          <p class="hero-intro">I investigate meaningful research questions and build thoughtful, evidence-driven solutions. Explore my publications, research activities, and multidisciplinary projects.</p>
+
+          <p class="hero-title">
+            Decision-Making · Complex Systems
+          </p>
+
+          <p class="hero-intro">
+            I’m interested in how complex systems make decisions,
+            adapt, and give rise to emergent behaviors.
+            My research explores how local decisions and interactions
+            shape collective patterns and system-level dynamics.
+          </p>
+
+
+          <!-- Actions -->
           <div class="hero-actions">
-            <a class="button button-primary" href="publications.html">View research</a>
-            <a class="button button-secondary" href="projects.html">View projects</a>
-            <a class="button button-secondary" href="assets/CV_2607.pdf">Download CV (update July 2026)</a>
-          </div>
-          <div class="social-links" aria-label="Social links">
-            <a href="https://github.com/ljyyyy120" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=_QrhmWAAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="https://www.linkedin.com/in/junyi-li-884634265/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+
+          <a
+            class="button button-primary"
+            href="publications.html"
+          >
+            View research
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="projects.html"
+          >
+            View projects
+          </a>
+
+          <a
+            class="cv-link"
+            href="assets/CV_2607.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV ↗
+          </a>
+
         </div>
 
-        <div class="profile-card" aria-label="Education">
-          <div class="profile-photo">
-            <img src="assets/Junyi.jpg" alt="Junyi Li">
+
+          <!-- Social links -->
+          <div class="social-links" aria-label="Social links">
+
+            <a
+              href="https://github.com/ljyyyy120"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://scholar.google.com/citations?user=_QrhmWAAAAAJ&hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/junyi-li-884634265/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
           </div>
-          <div>
-            <p class="profile-label">Current Position</p>
-            <div class="education-item">
-              <h2>New York University</h2>
-              <p><strong>Ph.D. in Urban Systems</strong></p>
-              <p>Advisor: Prof. Eleonora Maria Tronci</p>
+
+
         </div>
+
+
+        <!-- Hero visual -->
+        <div class="hero-visual">
+
+          
+
+          <div class="hero-photo">
+            <img
+              class="poster-photo"
+              src="assets/Junyi-poster.JPG"
+              alt=""
+            >
+            <img
+              class="color-photo"
+              src="assets/junyi-spring.jpg"
+              alt=""
+            >
+          </div>
+
+          <img
+            class="hero-doodle"
+            src="assets/junyi-doodle.png"
+            alt=""
+            aria-hidden="true"
+          >
+
+          <div class="hero-note">
+            <span class="hero-note-label">Currently</span>
+            <strong>Ph.D. Candidate</strong>
+            <span>New York University</span>
+            <span>Urban Systems</span>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
+
+
+    <!-- =========================
+         About
+    ========================== -->
     <section class="section" id="about">
+
       <div class="container about-grid">
 
-        <!-- Left column -->
+        <!-- About text -->
         <div class="about-content">
+
           <p class="section-kicker">About</p>
 
           <h2 class="section-title">
-            Building knowledge that lasts.
+            Curious about how systems behave.
           </h2>
 
           <p class="large-text">
-            Working at
-            the intersection of AI, probabilistic decision-making, and
-            infrastructure monitoring.
+            My work sits at the intersection of
+            decision-making, complex systems, and computation.
           </p>
 
           <p>
-            My research explores how intelligent systems can make reliable
-            decisions in complex, uncertain physical environments. By combining
-            probabilistic decision-making, POMDPs, information theory, and
-            reinforcement learning, I develop methods that enable infrastructure
-            systems to operate more safely, efficiently, and autonomously.
+            I’m interested in understanding how individual decisions
+            and local interactions produce larger-scale patterns,
+            behaviors, and unexpected outcomes.
+          </p>
+
+          <p>
+            My current research draws on probabilistic decision-making,
+            reinforcement learning, information theory, and computational
+            modeling. I’m especially interested in questions where
+            uncertainty, adaptation, and emergence interact.
           </p>
 
         </div>
 
-        <!-- Right column -->
+
+        <!-- Education -->
         <aside class="education-card">
+
+          <p class="section-kicker">Background</p>
 
           <h3>Education</h3>
 
-          <div class="edu-item">
-            <h4>New York University</h4>
-            <p>Ph.D. in Urban Systems</p>
-            <span>2025 – Present</span>
-          </div>
 
           <div class="edu-item">
+
             <h4>New York University</h4>
-            <p>M.S. in Applied Urban Science and Informatics</p>
-            <span>2023 – 2025</span>
+
+            <p>
+              Ph.D. in Urban Systems
+            </p>
+
+            <span>
+              2025 – Present
+            </span>
+
           </div>
 
+
           <div class="edu-item">
+
+            <h4>New York University</h4>
+
+            <p>
+              M.S. in Applied Urban Science and Informatics
+            </p>
+
+            <span>
+              2023 – 2025
+            </span>
+
+          </div>
+
+
+          <div class="edu-item">
+
             <h4>Tongji University</h4>
-            <p>B.Arch. in Architecture</p>
-            <span>2018 – 2023</span>
+
+            <p>
+              B.Arch. in Architecture
+            </p>
+
+            <span>
+              2018 – 2023
+            </span>
+
           </div>
 
         </aside>
@@ -115,35 +285,165 @@
       </div>
     </section>
 
+
+
+    <!-- =========================
+         Work
+    ========================== -->
     <section class="section section-tinted">
+
       <div class="container">
+
         <div class="section-heading-row">
-          <div><p class="section-kicker">Explore</p><h2 class="section-title">My work</h2></div>
-          <p class="section-description">Research publications and practical projects now live on their own focused pages.</p>
+
+          <div>
+
+            <p class="section-kicker">
+              Explore
+            </p>
+
+            <h2 class="section-title">
+              My work
+            </h2>
+
+          </div>
+
+          <p class="section-description">
+            Research, experiments, and projects exploring
+            intelligent and complex systems.
+          </p>
+
         </div>
+
+
         <div class="card-grid two-column-grid">
+
+
+          <!-- Research -->
           <article class="card feature-card">
-            <span class="card-number">01</span><p class="card-type">Publications</p>
-            <h3>Research</h3><p>Journal articles and conference proceedings </p>
-            <a href="research.html">Open research page →</a>
+
+            <span class="card-number">
+              01
+            </span>
+
+            <p class="card-type">
+              Publications
+            </p>
+
+            <h3>
+              Research
+            </h3>
+
+            <p>
+              Journal articles, conference proceedings,
+              and ongoing research.
+            </p>
+
+            <a href="publications.html">
+              Open research page →
+            </a>
+
           </article>
+
+
+          <!-- Projects -->
           <article class="card feature-card">
-            <span class="card-number">02</span><p class="card-type">Selected work</p>
-            <h3>Projects</h3><p>Explore modeling, policy, and architecture projects.</p>
-            <a href="projects.html">Open projects page →</a>
+
+            <span class="card-number">
+              02
+            </span>
+
+            <p class="card-type">
+              Selected work
+            </p>
+
+            <h3>
+              Projects
+            </h3>
+
+            <p>
+              Modeling, computational experiments,
+              policy, and design projects.
+            </p>
+
+            <a href="projects.html">
+              Open projects page →
+            </a>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section
+      class="section contact-section"
+      id="contact"
+    >
+
       <div class="container contact-card">
-        <div><p class="section-kicker">Contact</p><h2>Let’s connect.</h2><p>I’m happy to discuss research, collaboration, teaching, and new ideas.</p></div>
-        <a class="button button-gold" href="jl14864@nyu.edu">Email me</a>
+
+        <div>
+
+          <p class="section-kicker">
+            Contact
+          </p>
+
+          <h2>
+            Let’s connect.
+          </h2>
+
+          <p>
+            I’m always happy to talk about research,
+            interesting questions, collaborations,
+            or new ideas.
+          </p>
+
+        </div>
+
+
+        <a
+          class="button button-primary"
+          href="mailto:jl14864@nyu.edu"
+        >
+          Email me
+        </a>
+
       </div>
+
     </section>
+
   </main>
-  <footer><div class="container footer-content"><p>© <span id="year"></span> Junyi Li</p><p>Built with HTML, CSS, and GitHub Pages.</p></div></footer>
+
+
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <p>
+        © <span id="year"></span> Junyi Li
+      </p>
+
+      <p>
+        Built with curiosity in New York.
+      </p>
+
+    </div>
+
+  </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
