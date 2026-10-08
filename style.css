@@ -763,7 +763,7 @@ h1 {
 .large-text {
   max-width: 720px;
 
-  color: var(--color-blue);
+  color: var(--color-red);
 
   font-size: clamp(1.3rem, 2vw, 1.7rem);
 
@@ -821,16 +821,10 @@ h1 {
 
 .education-card {
   position: sticky;
-
-  top: 110px;
-
   padding: 30px;
-
   border: 1px solid var(--color-gray);
   border-radius: 26px;
-
   background: var(--color-surface);
-
   box-shadow: var(--shadow-soft);
 }
 
@@ -1540,10 +1534,7 @@ footer {
   }
 
   .hero-signature {
-    width: 190vw;
-    top: 44%;
-    left: 48%;
-    opacity: 0.72;
+    display: none;
   }
 
   /* ---------- Navigation ---------- */
